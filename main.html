@@ -7,27 +7,54 @@
 </head>
 
 <body>
-	<h1 style="text-align: center;">HTML Assignment 3</h1>
- <!-- table 1-->
-	<table id="table-1" class="middle" border="1">
-		<tr>
-			<td id="t11">Cell 1</td>
-			<td id="t12">Cell 2</td>
-			<td id="t13" class="right">Cell 3</td>
-		</tr>
-		<tr class="center">
+	<style>
+        .center {
+            text-align: center;
+        }
+        .right {
+            text-align: right;
+        }
+        table {
+            border-collapse: collapse; /* Ensures that the borders are rendered correctly */
+        }
+        td {
+            border: 1px solid black;
+            padding: 1px;
+        }
+        .green {
+            background-color: green;
+        }
+        .blue {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">HTML Assignment #3</h1>
+
+    <!-- Table 1 -->
+    <table id="table-1" class="middle">
+        <tr>
+            <td id="t11">Cell 1</td>
+            <td id="t12" class="center">Cell 2</td>
+            <td id="t13" class="right">Cell 3</td>
+        </tr>
+        <tr class="center">
             <td>Cell 4</td>
             <td>Cell 5</td>
             <td class="right">Cell 6</td>
         </tr>
-		<tr>
+        <tr>
             <td>Cell 7</td>
             <td>Cell 8</td>
             <td class="right">Cell 9</td>
         </tr>
     </table>
-	<br><br>
-	<table id="table-2" class="middle" border="1">
+
+    <br><br>
+
+    <!-- Table 2 -->
+    <table id="table-2" class="middle">
         <tr>
             <td id="t21" colspan="6">Cell 1</td>
         </tr>
@@ -76,7 +103,7 @@
     <br><br>
 
     <!-- Table 3 -->
-    <table id="table-3" class="middle" border="1">
+    <table id="table-3" class="middle">
         <tr class="green">
             <td>Cell 1</td>
             <td>Cell 2</td>
@@ -102,7 +129,6 @@
             <td>Cell 17</td>
         </tr>
     </table>
-	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
 
